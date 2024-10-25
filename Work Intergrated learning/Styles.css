@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #1C3D36;
+    color: #fff;
+    padding: px;
+}
+
+.logo-container {
+/* to be continued*/
+display: flex;   
+    align-items: center;
+    background-color:#2E8B57;
+}
+
+img {
+   margin-left: 280px;
+   align-items: center;
+   padding: 10px 20px;
+    margin: 10px;
+
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+    background-color: #D4AF37;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    margin-left: 20px;
+    padding: 10px 0;
+    float: left;
+
+
+}
+
+nav ul li a {
+    color: rgb(251, 251, 251);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+.hero {
+    background-color: #5d8d70;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #ffffff;
+}
+
+.btn {
+    background: #D4AF37;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.courses {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(120, 210, 123);
+    border-radius: 10px;
+}
+
+#calculate-fees form {
+    margin: 20px;
+}
+
+footer {
+    background-color: #1C3D36;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.course-details {
+display:block;
+
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page | Empowering the Nation</title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="Function.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="Media/Logo.jpg">
+    
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="Media/Logo.jpg" alt="Empowering the Nation Logo" height="200" width="200"> 
+            <h1>Empowering the Nation</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home Page.html">Home</a></li>
+                <li><a href="Six month course.html">Long Courses</a></li>
+                <li><a href="Six-Week Courses.html">Short Courses</a></li>
+                <li><a href="Calculate Fees.html">Bookings</a></li>
+                <li><a href="Contacts.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Booking and Discount Section -->
+    <div class="container">
+        <h2>Book a Course</h2>
+
+        <!-- Course Selection Section -->
+        <div class="course-list">
+            <h3>Select Courses</h3>
+            <label>
+                <input type="checkbox" class="course-checkbox" data-fee="750" value="Child Minding"> 
+                Child Minding (R750)
+            </label>
+            <label>
+                <input type="checkbox" class="course-checkbox" data-fee="750" value="Cooking"> 
+                Cooking (R750)
+            </label>
+            <label>
+                <input type="checkbox" class="course-checkbox" data-fee="750" value="Garden Maintenance"> 
+                Garden Maintenance (R750)
+            </label>
+            <label>
+                <input type="checkbox" class="course-checkbox" data-fee="3500" value="First Aid"> 
+                First Aid (R3500)
+            </label>
+            <label>
+                <input type="checkbox" class="course-checkbox" data-fee="3500" value="Sewing"> 
+                Sewing (R3500)
+            </label>
+            <label>
+                <input type="checkbox" class="course-checkbox" data-fee="3500" value="Life Skills"> 
+                Life Skills (R3500)
+            </label>
+        </div>
+
+        <!-- Calculate Button and Display Total -->
+        <button onclick="calculateTotal()">Calculate Total</button>
+        <p class="total-price">Total Fees: R0</p>
+        <p class="discount-info"></p>
+
+        <!-- User Booking Form -->
+        <div class="courses">
+            <h3>Fill in Your Details to Book</h3>
+            <form action="submit-booking.html" method="POST">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="course-selected">Selected Course</label>
+                <select id="course-selected" name="course-selected">
+                    <option value="Child Minding">Child Minding</option>
+                    <option value="Cooking">Cooking</option>
+                    <option value="Garden Maintenance">Garden Maintenance</option>
+                    <option value="First Aid">First Aid</option>
+                    <option value="Sewing">Sewing</option>
+                    <option value="Life Skills">Life Skills</option>
+                </select>
+
+                <label for="message">Message (Optional)</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any additional information you want to share"></textarea>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Empowering the Nation</p>
+    </footer>
+
+    
+</body>
+</html>
